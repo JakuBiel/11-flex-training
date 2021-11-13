@@ -6,41 +6,109 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <title>Cennik - wieczory panieńskie</title>
- <style>
- </style>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+    content="ie=edge">
+  <title>Troll shop</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0 auto;
+      /* background-color: beige; */
+      max-width: 1200px;
+      min-width: 800px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: space-around; */
+      align-items: center;
+    }
+
+    h1 {
+      align-self: stretch;
+      /* border: 1px red solid; */
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      flex-basis: 50vh;
+
+    }
+
+    p,
+    h2 {
+      padding: 1rem 0;
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 1rem;
+      /* border: 1px solid black; */
+      min-height: 60vh;
+      flex-basis: 25%;
+      background-color: lightgray;
+
+    }
+
+    p.price {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      flex-grow: 1;
+
+    }
+
+    span {
+      color: red;
+      background-color: #fff;
+      padding: 1rem 2rem;
+      border: 1px solid black;
+    }
+  </style>
 </head>
 
 <body>
 
- <h1>Wieczór panieński - zaproś naszego trola!</h1>
- <section>
-  <div class="col">
-   <h2>Opcja 1</h2>
-   <img src="1.png" alt="">
-   <p>(bardzo) Tanio</p>
-   <p class="price"><span>100 dutków</span></p>
-  </div>
-  <div class="col">
-   <h2>Opcja 2</h2>
-   <img src="2.png" alt="">
-   <p>Średnio Tanio</p>
-   <p>Wielka pałka w zestawie</p>
-   <p class="price"><span>300 dutków</span></p>
-  </div>
-  <div class="col">
-   <h2>Opcja 3</h2>
-   <img src="3.png" alt="">
-   <p>Niezbyt tanio</p>
-   <p>Duża moc (wytrzyma noc)</p>
-   <p>Przystojny (jak na trola)</p>
-   <p class="price"><span>500 dutków</span></p>
-  </div>
+  <h1>Have your own troll!</h1>
+  <section>
+    <div class="col">
+      <h2>Option 1</h2>
+      <img src="1.png" alt="">
+      <p>(very) Cheap</p>
+      <p class="price"><span>100 gold</span></p>
+    </div>
+    <div class="col">
+      <h2>Option 2</h2>
+      <img src="2.png" alt="">
+      <p>Medium cheap</p>
+      <p>Log in set</p>
+      <p class="price"><span>300 gold</span></p>
+    </div>
+    <div class="col">
+      <h2>Option 3</h2>
+      <img src="3.png" alt="">
+      <p>Not a cheap</p>
+      <p>Great power</p>
+      <p>Very handsome</p>
+      <p class="price"><span>500 gold</span></p>
+    </div>
 
- </section>
+  </section>
 </body>
 
 </html>
